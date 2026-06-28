@@ -1,0 +1,29 @@
+# Raw sequencing data
+data/raw_fastq/
+data/trimmed_fastq/
+data/sra/
+data/reference/
+
+# Alignment files
+results/alignment/
+results/bam/
+results/sorted_bam/
+results/bam_index/
+
+# R temporary files
+.Rhistory
+.RData
+.RDataTmp
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Python cache
+__pycache__/

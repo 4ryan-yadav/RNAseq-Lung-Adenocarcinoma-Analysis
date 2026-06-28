@@ -1,0 +1,170 @@
+<p align="center">
+
+# End-to-End RNA-seq Analysis of Lung Adenocarcinoma
+
+![Linux](https://img.shields.io/badge/Linux-Ubuntu-E95420?logo=ubuntu)
+![R](https://img.shields.io/badge/R-4.x-276DC3?logo=r)
+![HISAT2](https://img.shields.io/badge/Aligner-HISAT2-blue)
+![DESeq2](https://img.shields.io/badge/DESeq2-Differential%20Expression-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+</p>
+
+# End-to-End RNA-seq Analysis of Lung Adenocarcinoma
+
+## Overview
+
+This project presents a complete RNA-seq analysis workflow for identifying differentially expressed genes and dysregulated biological pathways between normal lung tissue and lung adenocarcinoma.
+
+The workflow includes quality control, read trimming, alignment, gene quantification, differential expression analysis, functional enrichment, and biological interpretation.
+
+**Dataset:** GSE282617 
+**Organism:** *Homo sapiens* 
+**Reference Genome:** GRCh38 
+**Annotation:** GENCODE v49 
+**Samples:** 3 Normal + 3 Tumor (paired-end RNA-seq)
+
+## Pipeline
+
+![Workflow](docs/figures/PCA.png)
+
+The complete workflow includes:
+
+- Quality Control (FastQC, MultiQC)
+- Read Trimming (fastp)
+- HISAT2 Alignment
+- Samtools Processing
+- featureCounts
+- DESeq2 Differential Expression
+- GO & KEGG Enrichment
+
+## Workflow
+
+```text
+GEO Dataset
+     │
+     ▼
+SRA Download
+     │
+     ▼
+FASTQ Conversion
+     │
+     ▼
+Quality Control (FastQC)
+     │
+     ▼
+Read Trimming (fastp)
+     │
+     ▼
+Quality Control (FastQC + MultiQC)
+     │
+     ▼
+HISAT2 Alignment
+     │
+     ▼
+Samtools Processing
+     │
+     ▼
+featureCounts
+     │
+     ▼
+DESeq2
+     │
+     ▼
+GO & KEGG Enrichment
+     │
+     ▼
+Biological Interpretation
+```
+
+
+## Tools Used
+
+| Step | Tool |
+|------|------|
+| Data Download | SRA Toolkit |
+| Quality Control | FastQC, MultiQC |
+| Read Trimming | fastp |
+| Alignment | HISAT2 |
+| BAM Processing | Samtools |
+| Gene Quantification | featureCounts |
+| Differential Expression | DESeq2 |
+| Functional Enrichment | clusterProfiler |
+| Annotation | org.Hs.eg.db |
+| Visualization | ggplot2, pheatmap |
+
+
+## Results
+
+### Differentially Expressed Genes
+
+- Differential expression analysis performed using DESeq2
+- Significant genes identified using adjusted *p* < 0.05
+
+### Functional Enrichment
+
+**Gene Ontology (GO)**
+
+- Extracellular matrix organization
+- Extracellular structure organization
+- Cell-substrate adhesion
+- Mesenchymal development
+- Mesenchymal differentiation
+- Regulation of small GTPase-mediated signaling
+
+**KEGG Pathways**
+
+- ECM–receptor interaction
+- Focal adhesion
+- Mucin-type O-glycan biosynthesis
+
+## Key Figures
+
+| PCA | Volcano |
+|-----|---------|
+| ![](docs/figures/PCA.png) | ![](docs/figures/volcano.png) |
+
+| Heatmap | KEGG |
+|---------|------|
+| ![](docs/figures/GO_Heatplot.png) | ![](docs/figures/KEGG_dotplot.png) |
+
+## Repository Structure
+
+```text
+RNAseq/
+├── data/
+├── docs/
+├── environment/
+├── results/
+├── scripts/
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+## Author
+
+**Aryan Yadav**
+
+Biochemical Engineering (IDD)  
+Indian Institute of Technology (BHU), Varanasi
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+## Citation
+
+Dataset: **GSE282617** (NCBI Gene Expression Omnibus)
+
+---
+
+## Contact
+
+**Aryan Yadav**
+
+Biochemical Engineering (IDD), IIT (BHU) Varanasi
+
+GitHub: *(we'll add your GitHub link after creating the repository)*

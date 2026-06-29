@@ -120,15 +120,13 @@ Biological Interpretation
 
 ## Key Figures
 
-<p align="center">
-  <img src="docs/figures/PCA.png" width="45%">
-  <img src="docs/figures/Volcano.png" width="45%">
-</p>
+| PCA | Volcano |
+|-----|---------|
+| ![](docs/figures/PCA.png) | ![](docs/figures/volcano.png) |
 
-<p align="center">
-  <img src="docs/figures/GO_Heatplot.png" width="45%">
-  <img src="docs/figures/KEGG_dotplot.png" width="45%">
-</p>
+| Heatmap | KEGG |
+|---------|------|
+| ![](docs/figures/GO_Heatplot.png) | ![](docs/figures/KEGG_dotplot.png) |
 
 ## Repository Structure
 
@@ -137,7 +135,16 @@ RNAseq/
 ├── data/
 ├── docs/
 ├── environment/
-├── results/
+## Key Figures
+
+<p align="center">
+  <img src="docs/figures/PCA.png" width="45%">
+  <img src="docs/figures/Volcano.png" width="45%">
+</p>
+
+<p align="center">
+  <img src="docs/figures/GO_Heatplot.png" width="45%">
+  <img src="docs/figures/KEGG_dotplot.png" width="45%">├── results/
 ├── scripts/
 ├── README.md
 ├── LICENSE

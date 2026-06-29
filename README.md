@@ -26,7 +26,7 @@ The workflow includes quality control, read trimming, alignment, gene quantifica
 
 ## Pipeline
 
-![Workflow](docs/figures/PCA.png)
+![Workflow](docs/figures/workflow.png)
 
 The complete workflow includes:
 
